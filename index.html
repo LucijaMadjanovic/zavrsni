@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<!------ NAV ------>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav">
+  <a href="#" class="active"><img src="img/logo.png" alt="logo" width="200px"></a>
+
+  <div id="myLinks">
+    <a href="#home">Home</a>
+    <a href="#tehnologijada">O Tehnologijadi</a>
+    <a href="#timer">Koliko do Tehnologijade?</a>
+    <a href="#prijava">Prijavi se</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!------ SLIDESHOW ------>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <img src="img/img1.jpg">
+        </div>
+        
+        <div class="mySlides fade">
+        <img src="img/img2.jpg">
+        </div>
+        
+        <div class="mySlides fade">
+        <img src="img/img3.jpg">
+        </div>
+    </div>
+
+
+<!------ O TEHNOLOGIJADI ------>
+<div class="row" id="tehnologijada">
+    <div class="column">
+      <h2>O NATJECANJU</h2><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis, itaque voluptas possimus ad vitae doloribus, dolores dolor enim autem unde debitis sapiente veritatis omnis magnam atque deleniti fuga velit.
+      Nobis pariatur distinctio minima illo sunt. Maxime sit unde ipsa at accusantium, voluptatem voluptate accusamus esse! Itaque, quisquam blanditiis! Sit aut fugit nobis impedit quia repellendus accusantium in quos maiores!
+      Perspiciatis vitae reprehenderit nam maiores at, aperiam eveniet iste iure harum eius quibusdam cupiditate excepturi adipisci optio ipsam, reiciendis fugiat! Cumque voluptas culpa tempore aliquam reprehenderit eaque expedita deleniti ipsa!</p>
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>Some text..</p>
+    </div>
+  </div>
+
+<!------ TIMER ------>
+    <section class="timer section" id="timer">
+        <div class="timerBG">
+            <div class="timerData">
+                <h2 class="timerTitle" style="color: #000000;">KOLIKO DO TEHNOLOGIJADE?</h2><br>
+                <p id="timer-js" class="timerOdbrojavanje" style="color: #000000;"></p>
+            </div>
+        </div>
+    </section>
+    
+<!------ PRIJAVNICA ------>
+    <section class="forma" id="prijava">
+        <h2 style="text-align: center; margin: 70px 0 0 0;;">PRIJAVNICA</h2>
+        <div>
+            <form>      
+                <input name="name" type="text" class="feedback-input" placeholder="Ime" required/><br> 
+                <input name="lastname" type="text" class="feedback-input" placeholder="Prezime" required/><br>
+                <input name="email" type="text" class="feedback-input" placeholder="Email" required/><br>
+                <input name="phone" type="text" class="feedback-input" placeholder="Broj mobitela" required/><br>
+                <input name="email" type="text" class="feedback-input" placeholder="Fakultet"/><br>
+                <select name="kategorije" class="feedback-input">
+                    <option value="odabir" disabled>Odaberi kategoriju</option>
+                    <option value="znanost">Znanost</option>
+                    <option value="sport">Sport</option>
+                    <option value="oboje">Znanost i sport</option>
+                </select><br>
+                <input type="submit" value="POŠALJI"/>
+            </form>
+        </div>
+    </section>
+
+<!------ KONTAKT ------>
+    <section id="kontakt">
+        <div class="row">
+            <div class="column">
+                <h3>Kontakt informacije</h3>
+                <ul>
+                    <li><a href="https://goo.gl/maps/w6YMvT3i3X2G2ho99" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>Getaldićeva 2, 10000 Zagreb</a></li>
+                    <li><a href="tel:+385-1-2371080"><i class="fa fa-phone-square" aria-hidden="true"></i>01 23 71 080</a></li>
+                    <li><a href="mailto:info@grf.hr?subject=Tehnologijada"><i class="fa fa-envelope" aria-hidden="true"></i>info@grf.hr</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>Društvene mreže</h3>
+                <ul>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!------ FOOTER ------>
+    <footer class=".izgled-footer">
+        <p style="text-align: center; margin: 20px;">Završni rad - Grafički fakultet, Sveučilište u Zagrebu &copy; 2022</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
